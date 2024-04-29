@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Tab Demonstrator</title>
+        <script src="/static/htmx.js"></script>
+        <style>
+            .button {
+                display: inline-block;
+                border-radius: 25px;
+                border: 2px solid #237ce2;
+                padding: 40px;
+                margin: 15px;
+                width: 100px;
+                height: 100px; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="button" hx-get="tab/0/up" hx-target="#last-command">Tab 0 up</div>
+        <div class="button" hx-get="tab/0/down" hx-target="#last-command">Tab 0 down</div>
+        <br />
+        <div class="button" hx-get="tab/1/up" hx-target="#last-command">Tab 1 up</div>
+        <div class="button" hx-get="tab/1/down" hx-target="#last-command">Tab 1 down</div>
+        <br />
+        <div class="button" hx-get="tab/2/up" hx-target="#last-command">Tab 2 up</div>
+        <div class="button" hx-get="tab/2/down" hx-target="#last-command">Tab 2 down</div>
+        <br />
+        <div class="button" hx-get="tab/3/up" hx-target="#last-command">Tab 3 up</div>
+        <div class="button" hx-get="tab/3/down" hx-target="#last-command">Tab 3 down</div>
+        <br />
+        <H3>Last command:</H3>
+        <div id="last-command">No command issued yet</div>
+    </body>
+</html>
